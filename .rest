@@ -39,7 +39,7 @@ content-type: application/json
 
 
 ### PUT contact
-PUT http://localhost:8080/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
+PUT http://localhost:3000/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
 content-type: application/json
 
 {
@@ -50,7 +50,7 @@ content-type: application/json
     "birthday":"01/01/1950"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
+DELETE http://localhost:3000/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
 
 // PRODUCTION Deploy
 
