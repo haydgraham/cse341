@@ -3,3 +3,9 @@ GET http://localhost:3000/contacts
 
 ### Get a single contact
 GET http://localhost:3000/contacts/651216e6751b5af5e4f03a55
+
+###
+GET https://cse341-qga0.onrender.com/contacts
+
+###
+GET https://cse341-qga0.onrender.com/contacts/651216e6751b5af5e4f03a55
