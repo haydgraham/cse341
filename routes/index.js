@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.use('/contacts', require('./contacts'))
+// added swagger route
+router.use('/', require('./swagger'));
+router.use('/contacts', require('./contacts'));
 
 module.exports = router;
