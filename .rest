@@ -4,28 +4,13 @@ GET http://localhost:3000/contacts
 ### Get a single contact
 GET http://localhost:3000/contacts/651216e6751b5af5e4f03a55
 
-###
+### Get all from render
 GET https://cse341-qga0.onrender.com/contacts
 
-###
+### Get single from render
 GET https://cse341-qga0.onrender.com/contacts/651216e6751b5af5e4f03a55
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Create contact
+### Add contact locally
 POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
@@ -37,9 +22,8 @@ content-type: application/json
     "birthday":"06/09/1969"
 }
 
-
-### PUT contact
-PUT http://localhost:3000/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
+### Update contact locally
+PUT http://localhost:3000/contacts/651356553f84437634841e74 HTTP/1.1
 content-type: application/json
 
 {
@@ -49,13 +33,13 @@ content-type: application/json
     "favoriteColor":"Red",
     "birthday":"01/01/1950"
 }
-### DELETE contact
-DELETE http://localhost:3000/contacts/651216e6751b5af5e4f03a56 HTTP/1.1
 
-// PRODUCTION Deploy
+### DELETE contact locally
+DELETE http://localhost:3000/contacts/651356553f84437634841e74 HTTP/1.1
 
 
-### Create contact
+
+### Create contact render
 POST https://cse341-qga0.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
@@ -68,8 +52,8 @@ content-type: application/json
 }
 
 
-### PUT contact
-PUT https://cse341-qga0.onrender.com/contacts/651351663f84437634841e71 HTTP/1.1
+### Update contact render
+PUT https://cse341-qga0.onrender.com/contacts/65135987d30c4c9e06e1e07f HTTP/1.1
 content-type: application/json
 
 {
@@ -81,5 +65,5 @@ content-type: application/json
 }
 
 
-### DELETE contact
-DELETE https://cse341-qga0.onrender.com/contacts/651351663f84437634841e71 HTTP/1.1
+### Delete contact render
+DELETE https://cse341-qga0.onrender.com/contacts/65135987d30c4c9e06e1e07f HTTP/1.1
