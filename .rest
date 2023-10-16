@@ -1,4 +1,17 @@
 
 
-### Get all from render
+### Get all products from render
 GET https://cse341-qga0.onrender.com/products
+
+### Create Product
+POST https://cse341-qga0.onrender.com/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "iphone",
+    "description": "Latest iphone with stunning camera",
+    "price": 899.99,
+    "stock": 100,
+    "category": "Electronics",
+    "imageUrl": "https://example.com/images/iphone.jpg"
+}
