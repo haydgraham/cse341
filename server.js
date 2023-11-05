@@ -21,7 +21,7 @@ passport.use(
       clientID:
         "568417694108-frag9tgrtg8va7es9hhruoic4pi83tie.apps.googleusercontent.com",
       clientSecret: "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",
-      callbackURL: "https://cse341-qga0.onrender.com", // Define your callback URL
+      callbackURL: "https://cse341-qga0.onrender.com",
     },
     (accessToken, refreshToken, profile, done) => {
       // Check if the user is already in your database by searching for their Google ID
@@ -56,7 +56,7 @@ passport.use(
 
 app.use(passport.initialize());
 
-// Define your routes here
+// routes
 app.use("/", require("./routes"));
 
 // OAuth routes
